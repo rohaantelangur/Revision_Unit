@@ -1,0 +1,73 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 60px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: 0;
+  }
+  .contener{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ToolTip{
+    visibility: hidden; 
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .top{
+    margin-top: -40px;
+    margin-left: -60px;
+  }
+  .bottom{
+    margin-top: 30px;
+    margin-left: -70px;
+  }
+  .left {
+    margin-top: -5px;
+    margin-left: -145px;
+  }
+  .right{
+    margin-top: -5px;
+    margin-left: 20px;
+
+  }
+  
+  .btn:hover .ToolTip{
+    visibility: visible;
+  }
+
+  .btn1:hover{
+    transition: all linear 200ms;
+    margin-top: -10px;
+  }
+
+  .btn2:hover{
+    transition: all linear 200ms;
+    margin-top: 10px;
+  }
+
+  .btn3:hover{
+    transition: all linear 200ms;
+    margin-left: -10px;
+  }
+
+  .btn4:hover{
+    transition: all linear 200ms;
+    margin-left: 10px;
+  }
+  .btnbox{
+    /* border: 1px solid; */
+    width: 4%;
+  }

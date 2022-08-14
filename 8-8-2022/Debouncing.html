@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <input id="debounce" />
+    <script>
+      var Input = document.getElementById("debounce");
+      const debounce = (func, delay) => {
+        let debounceTimer;
+        return  ()=> {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => func(), delay);
+        };
+      };
+
+      Input.addEventListener(
+        "keyup",
+        debounce(()=>{
+          var InputValue = document.getElementById("debounce").value;
+          console.log(InputValue);
+        }, 3000)
+      );
+    </script>
+  </body>
+</html>

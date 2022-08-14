@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <title>DRAG_DROP</title>
+  </head>
+  <body>
+    <div class="Main">
+        <div class="box">
+
+            <div
+            class="gragdiv"
+            id="drag1"
+            draggable="true"
+            ondragstart="drag(event)"
+            >
+            Rohaan
+        </div>
+    </div>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+
+    <div class="dragbox">
+        <div class="listitem">
+            <i class="fas fa-bars"></i>
+            <div class="text">This is a 1st item</div>
+        </div>
+
+        <div class="listitem">
+            <i class="fas fa-bars"></i>
+            <div class="text">This is a 2th item</div>
+        </div>
+
+        <div class="listitem">
+            <i class="fas fa-bars"></i>
+            <div class="text">This is a 3rd item</div>
+        </div>
+
+        <div class="listitem">
+            <i class="fas fa-bars"></i>
+            <div class="text">This is a 4th item</div>
+        </div>
+
+        <div class="listitem">
+            <i class="fas fa-bars"></i>
+            <div class="text">This is a 5th item</div>
+        </div>
+
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
